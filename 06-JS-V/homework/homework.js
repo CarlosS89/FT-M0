@@ -39,7 +39,13 @@ function agregarStringInvertida() {
 
   String.prototype.reverse=function (){
     var cadenaInvertida='';
-    var i=this.length-1;
+   /**  for (var i =this.length-1;i>=0;i--){
+      cadenaInvertida=cadenaInvertida+this.charAt(i);
+    }; 
+      return cadenaInvertida; 
+    }  
+   }*/
+  var i=this.length-1;
     while (i>=0) {
       cadenaInvertida = cadenaInvertida + this.charAt(i);
       i--;
@@ -94,6 +100,7 @@ function agregarMetodo() {
   Persona.prototype.datos=function(){
     return this.nombre+', '+this.edad+' años';
   }
+  
 }
   
 
